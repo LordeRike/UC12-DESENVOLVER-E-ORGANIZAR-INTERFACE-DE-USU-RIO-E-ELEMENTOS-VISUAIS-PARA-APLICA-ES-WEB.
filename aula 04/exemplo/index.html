@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Senac Montenegro - Cadastro de Alunos</h1>
+        <p>
+            Preencha os campos abaixo para solicitar a sua inscrição na UC12
+        </p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="post" aria-label="formulario de inscrição">
+            <fieldset>
+                <legend><strong>Dados Pessoais</strong></legend>
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome_aluno" required minlength="3" placeholder="EX.: Maria da Silva">
+                </p>
+                <p>
+                    <label for="email">E-mail de Contato:</label><br>
+                    <input type="email" id="email" name="email_aluno" required  placeholder="exemplo@email.com">
+                </p>
+                <p>
+                    <label for="senha">Crie uma Senha:</label><br>
+                    <input type="password" id="senha" name="senha_aluno" required minlength="6" placeholder="Mínimo 6 Caracteres">
+                </p>
+                <p>
+                    <label for="nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="nascimento" name="nascimento_aluno" required>
+                </p>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><strong>Preferências de Cursos</strong></legend>
+                <p>
+                    <Strong>Turno de Preferência:</Strong><br>
+                    <input type="radio" name="turno" id="turno_noite" value="noite" checked>
+                    <label for="turno_noite">Noite (19h às 22h)</label><br>
+
+                    <input type="radio" name="turno" id="turno_tarde" value="tarde">
+                    <label for="turno_noite">Tarde (13h30min às 17h30min)</label><br>
+                </p>
+                <p>
+                    <label for="escolaridade">Grau de Escolaridade:</label><br>
+                    <select name="escolaridade" id="escolaridade" required>
+                        <option value="">-- Selecione uma opção --</option>
+                        <option value="fundametal">-- Ensino Fundamental --</option>
+                        <option value="medio_cursando">-- Ensino Médio Cursando --</option>
+                        <option value="medio_completo">-- Ensino Médio Completo --</option>
+                        <option value="superior">-- Ensino Superior --</option>
+                    </select>
+                </p>
+                <p>
+                    <strong>Conhecimentos Prévios (Opcional):</strong><br>
+                    <input type="checkbox" name="conhecimentos" id="html" value="html">
+                    <label for="html">Já Conheço HTML</label><br>
+                    <input type="checkbox" name="conhecimentos" id="logica" value="logica">
+                    <label for="logica">Já Conheço Lógica de Programação</label><br>
+                </p>
+                <p>
+                    <label for="mensagem">Por que você quer fazer este curso?</label><br>
+                    <textarea name="mensagem_motivo" id="mensagem" rows="4" cols="40" placeholder="Escreva um breve resumo da sua motivação..."></textarea>
+                </p>
+            </fieldset>
+            <hr>
+            <p>
+                <button type="submit">Enviar Cadastro 🚀</button>
+                <button type="reset">Limpar Campos</button>
+            </p>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; 2026 Senac Montenegro - Todos os Direitos Reservados.
+        </p>
+    </footer>
+    
+</body>
+</html>
