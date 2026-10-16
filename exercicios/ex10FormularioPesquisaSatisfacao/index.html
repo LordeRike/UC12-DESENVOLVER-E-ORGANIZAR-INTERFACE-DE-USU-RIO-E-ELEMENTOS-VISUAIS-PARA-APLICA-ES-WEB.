@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Feedback</h1>
+        <p>A lanchonete da escola quer saber a opinião dos alunos!</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="post" aria-label="Formulário de Feedback">
+            <fieldset>
+                <legend><Strong>Dados do Cliente:</Strong></legend>
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" name="nome_cliente" id="nome" required minlength="3" placeholder="Joãozinho da Silva">
+                </p>
+                <p>
+                    <label for="email">E-mail de Contato</label><br>
+                    <input type="email" name="email_cliente" id="email" required placeholder="email@email.com">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><Strong>Avaliação:</Strong></legend>
+                <p>
+                    <Strong>Como você avalia o nosso atendimento?</Strong><br>
+                    <input type="radio" name="avaliacao" id="excelente" value="excelente">
+                    <label for="excelente">Excelente</label><br>
+
+                    <input type="radio" name="avaliacao" id="bom" value="bom">
+                    <label for="bom">Bom</label><br>
+
+                    <input type="radio" name="avaliacao" id="melhorar" value="precisa melhorar">
+                    <label for="melhorar">Precisa Melhorar</label><br>
+                </p>
+                <p>
+                    <label for="texto_avaliacao">Gostaria de acrescentar algo?</label><br>
+                    <textarea name="texto_avaliacao" id="texto_avaliacao" cols="30" rows="8" placeholder="Escreva um elogio ou um ponto a melhorar..."></textarea>
+                </p>
+            </fieldset>
+            <hr>
+            <p>
+                <button type="submit">Enviar Avaliação!</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </form>
+
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; 2026 Lanchonete da Escola - Todos os Direitos Reservados.
+        </p>
+    </footer>
+    
+</body>
+</html>

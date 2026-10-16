@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículo para Venda</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Veículo para Venda</h1>
+        <p>Cadastrem o seu veículo para avaliação.</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="post" aria-label="Cadastro de Veiculo para Revenda">
+            <fieldset>
+                <legend><Strong>Dados do Veiculo:</Strong></legend>
+                <p>
+                    <label for="modelo">Modelo do Veiculo:</label><br>
+                    <input type="text" name="modelo" id="modelo" required minlength="3" placeholder="BYD Dolphin Mini">
+                </p>
+                <p>
+                    <label for="ano">Ano de Fabricação:</label><br>
+                    <input type="number" name="ano" id="ano" required min="1990" max="2026" >
+                </p>
+                <hr>
+                <p>
+                    <label for="combustuvel">Tipo de Combustivel:</label><br>
+                    <select name="combustivel" id="combustivel" required>
+                        <option value="">-- Selecione uma Opção --</option>
+                        <option value="flex">Flex</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="eletrico">Elétrico</option>
+                    </select>
+                </p>
+                <hr>
+                <p>
+                    <input type="radio" name="cambio" id="cambio_manual" value="cambio manual">
+                    <label for="cambio_manual">Cambio Manual</label><br>
+
+                    <input type="radio" name="cambio" id="cambio_automatico" value="cambio automatico">
+                    <label for="cambio_automatico">Cambio Automático</label><br>
+                </p>
+
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><strong>Opcionais e Preço Pretendido:</strong></legend>
+                <p>
+                    <Strong>Opcionais do Carro:</Strong><br>
+                    <input type="checkbox" name="Opcionais" id="ar" value="Ar Condionado">
+                    <label for="ar">Ar Condionado</label><br>
+
+                    <input type="checkbox" name="Opcionais" id="direcao" value="Direção Hidráulica">
+                    <label for="direcao">Direção Hidráulica</label><br>
+
+                    <input type="checkbox" name="Opcionais" id="vidros" value="Vidros Elétricos">
+                    <label for="vidros">Vidros Elétricos</label>
+                </p>
+                <hr>
+                <p>
+                    <label for="preco">Preço Pretendido (R$):</label><br>
+                    <input type="number" name="preco" id="preco" required placeholder="ex.: R$180.000,00">
+                </p>
+            </fieldset>
+            <hr>
+            <p>
+                <button type="submit">Enviar Proposta</button>
+                <button type="reset">Limpar Campos</button>
+            </p>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; 2026 Revenda de Carros Seminovos - Todos os Direitos Reservados.
+        </p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta Médica</title>
+</head>
+<body>
+    <header>
+        <h1>Clínica Saúde de Montenegro</h1>
+        <p>Página de pré-agendamento de consultas.</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="post" aria-label="formulario de pré-agendamento">
+            <fieldset>
+                <legend><Strong>Paciente</Strong></legend>
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" name="nome" id="nome" required minlength="3" placeholder=" Ex.: Jobson Fernandes">
+                </p>
+                <p>
+                    <label for="telefone">Telefone/WhatsApp:</label><br>
+                    <input type="tel" name="telefone" id="telefone" required placeholder=" (51) 99123-4567">
+                </p>
+                <p>
+                    <label for="data_Consulta">Data da Consulta</label><br>
+                    <input type="date" name="data_Consulta" id="data_Consulta" required>
+                </p>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><strong>Atendimento:</strong></legend>
+                <p>
+                    <label for="especialidade">Especialidade Desejada:</label><br>
+                    <select name="especialidade" id="especialidade" required>
+                        <option value="">-- Selecione uma Opção --</option>
+                        <option value="geral">-- Clínico Geral --</option>
+                        <option value="pediatria">-- Pediatria --</option>
+                        <option value="odonto">-- Odontologia --</option>
+                    </select>
+                </p>
+                <hr>
+                <p>
+                    <label for="anamnese">Informe o motivo da consulta:</label><br>
+                    <textarea name="anamnese" id="anamnese" cols="30" rows="4" placeholder="Informe o motivo da consulta ou os sintomas..."></textarea>
+                </p>
+            </fieldset>
+            <hr>
+            <p>
+                <button type="submit">Solicitar Agendamento</button>
+            </p>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; 2026 Clínica Saúde de Montenegro - Todos os Direitos Reservados.
+        </p>
+    </footer>    
+</body>
+</html>
