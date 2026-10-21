@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TDS - Senac Montenegro</title>
+</head>
+<body>
+
+    <header>
+      <h1> Técnico em Desenvolvimento de Sistemas</h1>
+      <p> Senac Montenegro - Front-End</p>
+     <nav aria-label="Navegação Principal">
+<ul> 
+<li> <a href="#apresentacao"> Apresentação </a></li> <!-- pontinho de topico com a escrita azul -->
+<li> <a href="#horarios"> Horários </a></li>
+<li> <a href="#audio"> Aviso de áudio </a></li>
+</ul>
+</nav>
+
+    </header> 
+
+    <hr> <!-- risco no meio da tela -->
+
+    <main> 
+        <section id="apresentacao"> 
+             <h2> Conheça o Nosso Curso </h2>
+             <p> A unidade curricular <Strong>UC12</Strong>
+            prepara voces para a criação de interfaces web modernas.</p>
+
+            <h3> Video Institucional </h3>
+            <video controls width="420" arial-label="Video de apresentação"> <!-- INSERIR VIDEO -->
+            <source src="videoplayback (1).mp4" type="video/mp4"> <!-- baixar o video e colocar dentro da pasta da atividade-->
+            Teste de video em HTML 5 
+        </video>
+        </section>
+<hr>
+
+        <section id="horarios"> 
+            <h2> Grade dos Horários</h2>
+
+            <table border="1" arial-label="Tabela de horarios"> 
+                <thead> 
+                    <tr>
+                         <th scope="col">Dia da Semana</th> <!-- tr sao as celulas, th sao linhas -->
+                         <th scope="col"> Unidade Curricular</th> 
+                         <th scope="col"> Horário </th> 
+                        </tr>
+                </thead>
+                <body> 
+                    <tr> 
+                        <td>Terça-Feira</td>
+                        <td>UC12 - TDS - Front-End</td>
+                        <td>19:00 - 22:00 </td>
+                        
+                    </tr>
+                </body>
+            </table>
+        </section>
+
+        <hr> 
+        <section id="audio">
+            <h2> Recado do Professor </h2>
+            <p> Se voce gosta da aula, ouça o audio: </p>
+          <audio controls width="420" arial-label="Audio">
+            <source src="musica.mp3" type="audio/mp3"> <!-- colocar o audio dentro da pasta da atividade -->
+            teste de audio em HTML
+          </audio>
+
+        </section>
+    </main>
+
+<hr> 
+<footer>
+    <p>&copy: 2026 Senac Montenegro</p>
+</footer>
+    
+</body>
+</html>
