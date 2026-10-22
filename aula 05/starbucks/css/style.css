@@ -1,0 +1,14 @@
+* {
+    margin: 0; /*Margem*/
+    padding: 0; /*Afastamento*/
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
