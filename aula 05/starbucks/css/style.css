@@ -12,3 +12,84 @@
     margin: 0 auto;
     padding: 0 2%;
 }
+
+html,body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50%;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    position: absolute;
+    bottom: -450px;
+    background-color: #017143;
+    border-radius: 50%;
+    width: 1200px;
+    height: 1200px;
+    right: -500px;
+}
+
+.social_media {
+    position: absolute;
+    right: 510px;
+    top: 200px;
+}
+
+.social_media img {
+    display: block;
+    margin: 20px 0;
+    width: 20px;
+}
+
+.texto_sobre {
+    margin-top: 100px;
+}
+
+.texto_sobre h1 {
+    font-size: 50px;
+}
+
+.texto_sobre p {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    max-width: 800px;
+}
+
+.texto_sobre button {
+    border: 0;
+    background-color: #017143;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
