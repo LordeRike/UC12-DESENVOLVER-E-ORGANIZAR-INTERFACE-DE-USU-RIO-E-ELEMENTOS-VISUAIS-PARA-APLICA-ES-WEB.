@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Montenegro Tech - Smartwatch Esportivo</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Montenegro<strong class="titulo_tech">Tech</strong></h1>
+        <nav>
+            <ul>
+                <li class="navegacao"><a href="#">Home</a></li>
+                <li class="navegacao"><a href="#">Produto</a></li>
+                <li class="navegacao"><a href="#">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br class="linha">
+    <main>
+        <article class="card_produto">
+           <span class="badge_produto">Lançamento</span> 
+
+           <h2 class="titulo_produto">Smartwatch Esportivo</h2>
+           <img class="foto_produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiK-iT8adYG2Yi6oAwJ6Usum2ae3lGryGim21LCYOueQ&s=10" alt="Smartwatch">
+           <p class="resumo_produto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus eu est mollis finibus ac quis nulla. Fusce cursus turpis eu fermentum porta. Phasellus eget ultrices nunc. Suspendisse sapien lectus, elementum sit amet justo vel, tincidunt lobortis libero
+           </p>
+           <h5 class="preco_original">De: <strong>R$1299,99 </strong></h4>
+           <h3 class="preco_promocao">Por: <strong>R$999,98 </strong></h3>
+           <a href="#" class="link_comprar">Comprar Agora!</a>     
+        </article>
+
+        <fieldset class="campo">            
+            <legend><strong>Escolha a cor da Pulseira: </strong></legend>
+            <form action="post" class="Formulario">
+                <p class="selecao_cor">
+                    <label for="selecao_cor">Cor da Pulseira:</label>
+                    <select class="cor_pulseira" name="cor_pulseira" id="cor_pulseira" required>
+                        <option value="">-- Selecione uma Opção --</option>
+                        <option value="preto">-- Preto --</option>
+                        <option value="grafite">-- Grafite --</option>
+                        <option value="amarelo">-- Silicone Amarelo --</option>
+                    </select>
+                </p>
+            </form>            
+        </fieldset>
+        <br>
+        <fieldset class="campo">
+            <legend><strong>Consulta Frete</strong></legend>
+            <pclass="consulta_cep">Digite o seu CEP:</p>
+            <input type="text" class="cep" name="cep" id="cep" placeholder="95780-000">
+            <button class="botao_cep" type="submit">Consultar CEP</button>
+        </fieldset>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <footer>
+        <p class="rodape">
+            &copy; 2026 Montenegro Tech - Todos os Direitos Reservados.
+        </p>
+    </footer>    
+</body>
+</html>
