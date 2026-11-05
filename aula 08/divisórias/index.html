@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Divs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+     <!-- Cabeçalho com elementos distribuídos-->
+
+     <header class="topo_site">
+        <div class="bloco_logo">
+            <strong>PORTAL TECH</strong>
+        </div>
+        <div class="bloco_info_topo">
+            <span class="regua_medida">
+                [TOP: 100% DA TELA -
+                 Elementos distribuídos nos extremos]
+            </span>
+        </div>
+        <div class="bloco_usuario_topo">
+            <div class="icone>">
+                <img src="pessoa.webp" width="40">
+            </div>
+            <div class="user">
+                <h4 class="texto_user">Aluno Senac</h4>
+            </div>
+        </div>
+     </header>
+
+     <main class="terreno_central">
+        <div class="aviso_terreno">
+            TERRENO CENTRAL: largura central de 96% da janela  |  Padding interno de uns 20px.<br>
+            <strong>Matemática pra usar 3 colunas </strong>20% (esq) + 2% (margem) + 56% (centro) + 20% (dir) = 
+            <strong> 100% de área útil que vou usar!!</strong>
+        </div>
+
+        <!--Coluna 1 Barra na lateral esquerda-->
+        <!--Com 20% da Largura-->
+
+        <aside class="coluna_esquerda">
+            <h3>Menu Lateral</h3>
+            <p class="regua_medida">
+                [Largura: 20% | Padding: 16px | Margem Direita: 2%]
+            </p>
+            <div class="caixa_interna_menu">
+                <h4>Categorias (Neta)</h4>
+                <p>Noticias Locais <br> 
+                    Cursos Técnicos <br>
+                    Vagas de Emprego
+                </p>
+            </div>
+        </aside>
+        <!--Coluna 2: Artigo no Centro-->
+        <!--56%da Largura-->
+        <article class="artigo_central">
+            <h2>Artigo Principal em Destaque</h2>
+            <p class="regua_medida">
+                [Largura: 56% | Padding: 20px | Margem Direita: 2%] 
+                <div class="bloco_conteudo_interno">
+                    <h3>Caixa Neta do Artigo</h3>
+                    <p>
+                        <strong>Espaço Perfeito:</strong> Esta coluna central é a maior do site (56%). O <code>Padding: 20%</code> do artigo garante que este bloco azul petroleo fique protegido, respirando e perfeitamente centralizado entre duas barras laterais!
+                    </p>
+                </div>
+            </p>
+        </article>
+
+        <!--Coluna 3 Painel lateral a Direita-->
+        <!--20% da Largura a Direita--> 
+        <aside class="coluna_direita">
+            <h3>Painel Direito</h3>
+            <p class="regua_medida">
+                [Largura: 20% | Padding: 16px]
+            </p>
+            <div class="caixa_interna_widget">
+                <h4>Widget Direto (Neta)</h4>
+                <p>
+                    <strong>Equilibrio Visual:</strong>
+                    Agora temos uma caixa preenchendo a extremidade direita da tela! Ela ocupa os ultimos <strong>20%</strong> da nosa conta Matemática.
+                </p>
+            </div>
+        </aside>
+        <!--Rodapé Fixado na base-->
+        <!---->
+        
+     </main>
+
+     <footer class="rodape_site">
+        <div class="rodape_conteudo">
+            <span>📍 Senac Montenegro / RS</span>
+            <span>&copy;2026 - Demosntração Didatica do Box Model                    
+            </span>
+            <span class="regua_medida">
+                [Footer cravado na base]
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
