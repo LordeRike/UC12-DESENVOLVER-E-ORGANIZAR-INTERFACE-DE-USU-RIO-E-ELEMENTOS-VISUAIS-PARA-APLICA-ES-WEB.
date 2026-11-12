@@ -1,0 +1,74 @@
+:root {
+    --color-primary: #512679; /*Roxo barra*/
+    --color-primary-light: #7b3bb3; /*Roxo borda*/
+    --color-accent: #8e44ad; /*Destaque no texto*/
+
+    --bg-page: #f8fafc;
+    --bg-suface: #ffffff;
+
+    --text-dark: #1e293b;
+    --text-body: #475569;
+    --text-muted: #64748b;
+    --text-on-dark: #ffffff;
+
+    --font-display: 'Saira Extra Condesed', sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --shadow-avatar: 0 12px 24px -6px rgba(0,0,0,0.35);
+    --shadow-btn: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.06);
+
+    --transsition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth; /*rolagem suave*/
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-body);
+    font-family: var(--font-body);
+    min-height: 100vh;
+}
+
+.layout_container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    width: 280px;
+    min-height: 280px;
+    background: linear-gradient(180deg, var(--color-primary) 0%, #2b1958 100% );
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10; /*define posição*/
+    justify-content: center;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.08);
+}
+
+.sidebar_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2.5rem;
+}
+
+.avatar_container {
+    position: relative;
+}
+
