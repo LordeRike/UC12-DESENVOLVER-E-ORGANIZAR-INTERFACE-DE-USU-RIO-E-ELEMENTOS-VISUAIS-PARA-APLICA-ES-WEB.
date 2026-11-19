@@ -64,3 +64,11 @@ body {
     line-height: 1;
     margin-bottom: 1rem;
 }
+
+.tagline {
+    color: var(--text-main);
+    font-size: 1.75rem;
+    line-height: 1.35;
+    font-weight: 500;
+    max-width: 500px;
+}
